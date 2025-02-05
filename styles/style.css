@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+
+    --fuente-montserrat:  "Montserrat", sans-serif;
+    --fuente-krona:  "Krona One", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #0D1117;
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap:80px;
+
+}
+
+.header_link{
+
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+
+}
+
+.apellido{
+    color:var(--color-terciario);
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 7.4% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+.presentacion_texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.presentacion_nombre_apellido{
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+.presentacion_introduccion_portafolio{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+.presentacion_redes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion_enlance{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_enlance:hover{
+    background-color: #272727;
+}
+.presentacion_subtitulo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+}
+.foto_perfil{
+    border-radius: 16px;
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1200px) {
+
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%
+    }
+
+    .presentacion_texto{
+        width: auto;
+    }
+
+}
